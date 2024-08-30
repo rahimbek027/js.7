@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mahsulot Boshqarish</title>
+    <link rel="stylesheet" href="./admin.css">
 </head>
 <body>
- <h1>123</h1>
+
+    <nav>
+        <img style="width: 262px;" src="./images/Intex-market.uz.png" alt="">
+        <ul class="nav-ul">
+           <li>Просмотр веб-сайта </li>
+           <li>|</li>
+           <li>Joe Melton</li>
+        </ul>
+    </nav>
+    <div class="aaa">
+    <input style="width: 200px;outline: none;" class="search" type="text" id="searchInput" placeholder="Qidirish...">
+    <button id="showFormButton">Mahsulot Qo'shish</button>
+</div>
+
+<div class="nomi">
+    <ul class="nomi-ul">
+        <li>Nomi</li>
+        <li>Narxi</li>
+        <li>Rasmi</li>
+        <li>O'chirish</li>
+    </ul>
+</div>
+    <div id="productFormContainer" class="hidden">
+        <form id="productForm">
+            <label for="name">Mahsulot nomi:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="price">Narx:</label>
+            <input type="number" id="price" name="price" required>
+            
+            <label for="image">Rasm tanlash:</label>
+            <input type="file" id="image" name="image" accept="image/*">
+            
+            <button type="submit">Saqlash</button>
+            <button type="button" id="hideFormButton">Yopish</button>
+        </form>
+    </div>
+    <div id="productList">
+        
+        <div id="products"></div>
+    </div>
+
+    
+
+    <script src="./admin.js"></script>
 </body>
 </html>
